@@ -18,20 +18,26 @@ body {
     border-radius: 15px;
     cursor: pointer;
 }
-.info-box, .rights-box, .disclosure-box {
+.disclosure-box {
     margin: 10px 0;
     border-radius: 15px;
     padding: 20px;
     color: #fff;
 }
+/* .info-box, .rights-box, .disclosure-box {
+    margin: 10px 0;
+    border-radius: 15px;
+    padding: 20px;
+    color: #fff;
+} */
 .info-box {
     background-color: #007BFF;
 }
-.rights-box, .disclosure-box {
+/* .rights-box, .disclosure-box {
     background-color: #444;
     overflow-y: scroll;
     height: 150px;
-}
+} */
 .sidebar {
     width: 200px;
     position: fixed;
