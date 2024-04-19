@@ -29,9 +29,9 @@ body {
 }
 .rights-box, .disclosure-box {
     background-color: #444;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     height: 150px;
-    width: 75%;
+    width: 80%;
     float: left;
 }
 .sidebar {
