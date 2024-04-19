@@ -31,7 +31,6 @@ body {
     background-color: #444;
     overflow-y: scroll;
     height: 150px;
-    float:left;
 }
 .sidebar {
     width: 200px;
