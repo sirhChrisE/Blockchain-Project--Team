@@ -1,6 +1,13 @@
 // input_fields.js
 
-function collectVoterInformation() {
+document.addEventListener('DOMContentLoaded', function () {
+    var button = document.getElementById('collect-info');
+    button.addEventListener('click', function () {
+        createInputFields();
+    });
+});
+
+function createInputFields() {
     var container = document.createElement("div");
     container.classList.add("input-container");
 
@@ -69,7 +76,3 @@ function collectVoterInformation() {
     // Append the container to the document body or wherever you want to display it
     document.body.appendChild(container);
 }
-
-// Attach the function to a button click event
-var button = document.getElementById("collect-info");
-button.addEventListener("click", collectVoterInformation);
