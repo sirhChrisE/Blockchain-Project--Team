@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-contract VoterRegistry {
+contract voteCasting {
     struct Voter {
         string physical_address;
         string email;
@@ -13,7 +13,7 @@ contract VoterRegistry {
 
     mapping(address => Voter) public voters;
 
-    function registerVoter(string memory _email, string memory _phoneNumber, string memory _birthDate, bool _digitalSignature, string memory _driverLicense) public {
+    function castVote(string memory _email, string memory _phoneNumber, string memory _birthDate, bool _digitalSignature, string memory _driverLicense) public {
         require(bytes(_email).length > 0, "Email is required");
         require(bytes(_phoneNumber).length > 0, "Phone number is required");
         require(bytes(_birthDate).length > 0, "Birth date is required");
